@@ -2,13 +2,12 @@
 
 *{
   box-sizing: 0;
-  margin: 0;
-  padding: 0;
 }
 
 body{
   font-family: 'Poppins', sans-serif;
   background-color: rgb(8, 8, 121);
+  margin: 0;
 }
 
 header{
@@ -16,6 +15,11 @@ header{
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+}
+
+#form {
+  display: flex;
+  justify-content: space-between;
 }
 
 #form input{
@@ -46,10 +50,12 @@ main{
   background-color: rgb(43, 43, 184);
   margin: 1rem;
   border-radius: 3px;
+
+
+  position: relative;
   overflow: hidden;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.7);
   cursor: pointer;
-  position: relative;
 }
 
 .movies img{
@@ -65,14 +71,17 @@ main{
 }
 
 .movies_info h3{
-  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.movies_info span{
+  background-color: rgb(8, 8, 121);
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
 }
 
 .movies_info span.green{
   color: lightgreen;
-  background-color: rgb(8, 8, 121);
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
 }
 
 .movies_info span.orange{
@@ -88,7 +97,7 @@ main{
   padding: 2rem;
   display: absolute;
   right: 0;
-  bottom: 0;
+  top: -50px;
   left: 0;
   max-height: 100%;
   transform: translateY(101%);
