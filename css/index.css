@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Source+Sans+3&display=swap');
+
+*{
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(8, 8, 121);
+}
+
+header{
+  background-color: rgb(43, 43, 184);
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+#form input{
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid rgb(8, 8, 121);
+}
+
+#form input::placeholder{
+  color: rgb(8, 8, 121);
+}
+
+#form input:focus{
+  outline: none;
+  background-color: rgb(9, 9, 97);
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movies{
+  width: 300px;
+  background-color: rgb(43, 43, 184);
+  margin: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  position: relative;
+}
+
+.movies img{
+  width: 100%;
+}
+
+.movies_info{
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+}
+
+.movies_info h3{
+  margin-bottom: 20px;
+}
+
+.movies_info span.green{
+  color: lightgreen;
+  background-color: rgb(8, 8, 121);
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+.movies_info span.orange{
+  color: orange;
+}
+
+.movies_info span.red{
+  color: red;
+}
+
+.overview{
+  background-color: #eee;
+  padding: 2rem;
+  display: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in;
+}
+
+.movies:hover .overview{
+  transform: translateY(0);
+}
