@@ -51,9 +51,8 @@
 ### Live Demo <a name="live-demo"></a>
 
 🚀 Live Demo
-Link to our deployed project (project is not deployed yet).
 
-- https://
+- https://78fatemanazari.github.io/Movies-App/
 
 <!-- GETTING STARTED -->
 
